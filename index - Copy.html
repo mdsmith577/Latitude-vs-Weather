@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="UTF-8">
-    <title>Cloudiness Plot</title>
+    <title>Home</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -40,72 +40,73 @@
             <a class="dropdown-item" href="humidity.html">Humidity</a>
             <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
             <a class="dropdown-item" href="wind-speed.html">Wind Speed</a>                        
+
           </div>
         </li>
+
       </ul>
+
     </div>
   </nav>
 
   <div class="container">
     <div class="jumbotron">
-      <h1 class="display-4">Latitude & Cloudiness:</h1>
-      <p class="lead">An analysis of how Latitude affects Cloudiness in randomly selected cities around the world</p>
-      <hr class="my-4">
-      <a target="_blank" href="Latitude vs. Cloudiness Plot.png">
-        <img src="Latitude vs. Cloudiness Plot.png" alt="Latitude vs. Cloudiness">
-      </a>
+      <h1 class="display-4">Latitude & Weather: An Analysis</h1>
+      <p class="lead">How does Latitude affect Temperature/Humidity/Cloudiness/Wind Speed in randomly selected cities around the world?</p>
       <hr class="my-4">
 
 
-      <p class="lead">There is no strong relationship between latitude and cloudiness, however, it is interesting to see that a strong band of cities sits at 0, 80, and 100% cloudiness.
+      <div class="container">
+          <div class="row">
+
+            <div class="col-md-3">
+              <div class="thumbnail">
+                <a href="temperature.html">
+                  <img src="Latitude vs. Temperature Plot.png" alt="Latitude vs. Temperature" style="width:100%">
+                </a>
+              </div>
+            </div>
+
+
+
+            <div class="col-md-3">
+                <div class="thumbnail">
+                  <a href="humidity.html">
+                    <img src="Latitude vs. Humidity Plot.png" alt="Latitude vs. Humidity" style="width:100%">
+                  </a>
+                </div>
+              </div>
+
+
+            <div class="col-md-3">
+              <div class="thumbnail">
+                <a href="cloudiness.html">
+                  <img src="Latitude vs. Cloudiness Plot.png" alt="Latitude vs. Cloudiness" style="width:100%">
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="thumbnail">
+                <a href="wind-speed.html">
+                  <img src="Latitude vs. Wind Speed (mph) Plot.png" alt="Latitude vs. Wind Speed" style="width:100%">
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+      <hr class="my-4">
+
+      <p class="lead">The purpose of this project was to collect real-time weather data (temp, 
+        humidity, cloudiness, and wind speed) for randomly selected cities across the world 
+        to determine if latitude (how far North or South a city lies on the earth) plays a part 
+        in the above weather metrics.
       </p>
-
-      <hr class="my-4">
-
-      <a target="_blank" class="data-link" href="https://openweathermap.org/">Data Source: OpenWeatherMap</a>
-      <p class="lead">Date Updated: 3/27/2019</p>      
     </div>
   </div>
-
-  <div class="container">
-      <div class="jumbotron">
-          <p class="lead"><font size="6">Additional Charts:</font></p>
-        <div class="container">
-            <div class="row">
-  
-              <div class="col-md-3">
-                <div class="thumbnail">
-                  <a href="temperature.html">
-                    <img src="Latitude vs. Temperature Plot.png" alt="Latitude vs. Temperature" style="width:100%">
-                  </a>
-                </div>
-              </div>
-  
-  
-  
-              <div class="col-md-3">
-                  <div class="thumbnail">
-                    <a href="humidity.html">
-                      <img src="Latitude vs. Humidity Plot.png" alt="Latitude vs. Humidity" style="width:100%">
-                    </a>
-                  </div>
-                </div>
-
-  
-              <div class="col-md-3">
-                <div class="thumbnail">
-                  <a href="wind-speed.html">
-                    <img src="Latitude vs. Wind Speed (mph) Plot.png" alt="Latitude vs. Wind Speed" style="width:100%">
-                  </a>
-                </div>
-              </div>
-  
-            </div>
-          </div>
-
-      </div>
-  </div>
-
 
 
 </body>
